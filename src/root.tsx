@@ -21,10 +21,12 @@ export default component$(() => {
       <head>
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
+        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <RouterHead />
         <ServiceWorkerRegister />
       </head>
       <body lang="en">
+        <div data-netlify-identity-button>Login with Netlify Identity</div>
         <RouterOutlet />
       </body>
     </QwikCityProvider>
